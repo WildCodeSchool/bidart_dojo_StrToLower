@@ -1,4 +1,4 @@
-#StRToLower  
+# StRToLower  
 Ecrire une fonction qui reçoit une chaine de caractère.  
 La fonction devra renvoyer cette même chaine mais en minuscule.  
 
