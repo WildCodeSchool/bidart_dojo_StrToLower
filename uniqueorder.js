@@ -13,7 +13,9 @@ function uniqueInOrder(it) {
     return result;
 }
 
-console.log(uniqueInOrder("AAABBbCCaaaaaaGGGH"));
+module.exports = uniqueInOrder;
+
+// console.log(uniqueInOrder("AAABBbCCaaaaaaGGGH"));
 
 
 
