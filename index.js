@@ -1,4 +1,15 @@
 strToLower = (string) => {
-    console.log(string.normalize('NFD').replace(/[\u0300-\u036f]/g, "").toLowerCase())
+    return string.normalize('NFD').replace(/[\u0300-\u036f]/g, "").toLowerCase()
 }
-strToLower('Hello WoRlD É Ò')
+
+test = () => {
+    if (strToLower('HELLO World') === 'Hello World'){
+        console.log("Test ok");
+        
+    }else{
+        console.log('Nul');
+        
+    }
+}
+
+test()
