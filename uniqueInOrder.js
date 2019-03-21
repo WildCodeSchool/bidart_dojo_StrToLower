@@ -1,6 +1,5 @@
 'use strict';
 
-const str = "AAABBbCCaaaaaaGGGH";
  
 
 function uniqueInOrder(array) {
@@ -10,10 +9,17 @@ function uniqueInOrder(array) {
         newArray.push(array[i]);
         }
     }
-    return newArray
+    newArray = newArray.join('');
+    return newArray;
 }
 
-console.log(uniqueInOrder(str));
-console.log(uniqueInOrder("ABBBDGDHKEPOHE%"));
 
-
+function test(){
+    if (uniqueInOrder("AAABBbCCaaaaaaGGGH") === "ABbCaGH" ){
+        console.log(uniqueInOrder("AAABBbCCaaaaaaGGGH"));
+        console.log("TEST OK");   
+    } else {
+        console.log("test failed");
+    }
+}
+test()
