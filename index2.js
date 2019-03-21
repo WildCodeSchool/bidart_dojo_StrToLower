@@ -1,13 +1,12 @@
-function uniqueInOrder(string) {
-  return String.prototype.concat(...new Set(string));
-}
-console.log(uniqueInOrder("DDDDDddaaaaaaaadjj"));
+process.stdin.resume()
+process.stdin.setEncoding('utf8')
 
-test = () => {
-  if (uniqueInOrder("AABBCCdd") === "ABCd") {
-    console.log("test ok");
-  } else {
-    console.log("nul");
-  }
-};
-test();
+
+console.log('Type a chain of characters :');
+
+process.stdin.on('data', (string) => {
+  console.log(String.prototype.concat(...new Set(string)));
+  process.exit()
+})
+
+

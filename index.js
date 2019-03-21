@@ -1,15 +1,21 @@
-strToLower = (string) => {
-    return string.normalize('NFD').replace(/[\u0300-\u036f]/g, "").toLowerCase()
-}
+process.stdin.resume()
+process.stdin.setEncoding('utf8')
 
-test = () => {
-    if (strToLower('HELLO World') === 'Hello World'){
-        console.log("Test ok");
-        
-    }else{
-        console.log('Nul');
-        
-    }
-}
+console.log('Type a sentence :');
 
-test()
+process.stdin.on('data', (string) => {
+    console.log(string.normalize('NFD').replace(/[\u0300-\u036f]/g, "").toLowerCase());
+    process.exit()
+});
+
+// test = () => {
+//     if (strToLower('HELLO World Â') === 'hello world a'){
+//         console.log("Test ok");
+        
+//     }else{
+//         console.log('Nul');
+        
+//     }
+// }
+
+// test()
