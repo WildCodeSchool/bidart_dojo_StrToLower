@@ -1,7 +1,5 @@
 function tolower(string){
-    return string.toLowerCase();
-    
+    return string.toLowerCase();   
 }
-
-
+module.exports = tolower;
 

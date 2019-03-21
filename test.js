@@ -1,14 +1,20 @@
 // const assert = require('assert')
 
-const testing = require('./strtolower.js');
+const tolower = require('./strtolower');
 
-if (tolower("FUCK") === "fuck") {
-    console.log("Test OK");
-    
-} else {
-    console.log("Test KO");
-    
+function test() {
+
+    if (tolower('FUCK') === "fuck") {
+        console.log("Test OK");
+
+    } else {
+        console.log("Test KO");
+
+    }
 }
+
+test();
+
 
 
 
