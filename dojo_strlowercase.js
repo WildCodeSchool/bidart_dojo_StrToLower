@@ -1,4 +1,5 @@
+const test = require('./dojo_strlowercase.test')
+
 let sentence = 'IFOEKFOPEZKFOZKOFKZPFKKOEFOPKFEZZOIF'
 
-const fct = e => e.toLowerCase();
-console.log(fct(sentence));
+test.testing(sentence);
