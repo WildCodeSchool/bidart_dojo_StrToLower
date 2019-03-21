@@ -1,0 +1,19 @@
+{
+  "name": "bidart_dojo_strtolower",
+  "version": "1.0.0",
+  "description": "Ecrire une fonction qui reçoit une chaine de caractère.   La fonction devra renvoyer cette même chaine mais en minuscule.",
+  "main": "strToLower.js",
+  "scripts": {
+    "test": "node strToLowerTests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WildCodeSchool/bidart_dojo_StrToLower.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WildCodeSchool/bidart_dojo_StrToLower/issues"
+  },
+  "homepage": "https://github.com/WildCodeSchool/bidart_dojo_StrToLower#readme"
+}
