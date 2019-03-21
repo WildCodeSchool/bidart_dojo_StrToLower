@@ -1,0 +1,12 @@
+{
+  "name": "tolowerdojo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "strtolower.js",
+  "scripts": {
+    "test": "node test.js",
+    "start": "node strtolower.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
